@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AJAX</title>
     <script>
 
         function loadDoc(){
             const xhttp = new XMLHttpRequest();
-            xhttp.onload == function(){
+            xhttp.onload = function(){
             document.getElementById("demo").innerHTML = this.responseText;
         }
         xhttp.open("GET", "velha_raposa.txt", true)
